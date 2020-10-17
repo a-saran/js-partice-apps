@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="./main-style.css" />
+  </head>
+  <body>
+    <script>
+      const links = [
+        {
+          name: "drum",
+          link: "./01-drum-kit/index.html"
+        },
+        {
+          name: "drum-2",
+          link: "./01-drum-kit/index.html"
+        }
+      ];
+
+      links.forEach(link => {
+        document.body.innerHTML += `
+        <a href=${link.link} class="card-link">
+          <div class='card'>
+            ${link.name}
+          </div>
+        </a>
+      `;
+      });
+    </script>
+  </body>
+</html>
