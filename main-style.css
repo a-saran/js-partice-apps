@@ -14,6 +14,13 @@ body {
   box-sizing: border-box;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-link {
   padding: 10px;
   /* border: 1px solid #3838e1; */

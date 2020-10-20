@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./main-style.css" />
   </head>
   <body>
+    <div class="cards"></div>
     <script>
       const links = [
         {
@@ -24,17 +25,23 @@
         {
           name: "Flex gallery",
           link: "./05-flex-gallery/index.html"
+        },
+        {
+          name: "Type Ahead - Ajax",
+          link: "./06-ajax-type-ahead/index.html"
         }
       ];
 
+      const cardBody = document.querySelector(".cards");
+
       links.forEach(link => {
-        document.body.innerHTML += `
-        <a href=${link.link} class="card-link">
-          <div class='card'>
-            ${link.name}
-          </div>
-        </a>
-      `;
+        cardBody.innerHTML += `
+          <a href=${link.link} class="card-link">
+            <div class='card'>
+              ${link.name}
+            </div>
+          </a>
+        `;
       });
     </script>
   </body>
