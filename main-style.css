@@ -1,5 +1,9 @@
 body {
-  background: rgb(240, 240, 240);
+  background: rgb(193, 193, 193);
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,21 +29,25 @@ body {
   padding: 10px;
   /* border: 1px solid #3838e1; */
   border-radius: 10px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(40px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
   margin: 5px;
   flex: 1;
   width: 100%;
-  max-width: 300px;
-  min-width: 300px;
+  max-width: 280px;
+  min-width: 280px;
   min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #38386b;
-  box-shadow: 0 0 9px 0px black;
+  color: #ffffff;
+  box-shadow: 10px 10px 10px black;
+  transition: all 0.3s cubic-bezier(0, 0, 0.29, -0.54);
 }
 
 .card-link:hover {
-  box-shadow: inset 0 0 9px 0px black;
+  transform: scale(1.1);
 }
